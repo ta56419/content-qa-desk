@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "outDir": "build",
+    "rootDir": ".",
+    "skipLibCheck": true,
+    "types": ["node"]
+  },
+  "include": ["server/**/*.ts", "shared/**/*.ts"]
+}

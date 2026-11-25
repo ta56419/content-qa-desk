@@ -1,0 +1,45 @@
+{
+  "name": "content-qa-desk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A local editorial QA desk for pasted article HTML.",
+  "engines": {
+    "node": ">=24.14.0 <25"
+  },
+  "scripts": {
+    "dev": "npm run build:api && concurrently -k -n api,types,web \"node --watch build/server/main.js\" \"tsc -p tsconfig.server.json --watch --preserveWatchOutput\" \"vite\"",
+    "build:api": "tsc -p tsconfig.server.json",
+    "build": "npm run build:api && tsc -p tsconfig.client.json && vite build",
+    "lint": "eslint .",
+    "test": "npm run build:api && node --test build/server/*.test.js",
+    "test:e2e": "playwright test",
+    "metrics": "npm run build:api && node build/server/metrics.js",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.0",
+    "@nestjs/core": "^11.1.0",
+    "@nestjs/platform-express": "^11.1.0",
+    "cheerio": "^1.1.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^16.5.0",
+    "prettier": "^3.10.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.0",
+    "vite": "^7.2.0"
+  }
+}
