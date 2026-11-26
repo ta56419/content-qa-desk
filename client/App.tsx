@@ -144,9 +144,9 @@ export function App() {
       <main>
         <section className="intro" aria-labelledby="page-title">
           <div>
-            <p className="eyebrow">THE EDITORIAL WORKBENCH</p>
-            <h1 id="page-title">A second look, before publish.</h1>
-            <p>Check the small details. Keep every review.</p>
+            <p className="eyebrow">ARTICLE CHECKS</p>
+            <h1 id="page-title">Check an article draft.</h1>
+            <p>Paste HTML, review findings, and reopen saved reports.</p>
           </div>
           <div className="scope-note">
             <strong>5 focused checks</strong>
@@ -270,8 +270,8 @@ export function App() {
                     </h3>
                     <p>
                       {report.findings.length === 0
-                        ? 'Ready for a human editorial review.'
-                        : 'Small fixes for a more complete draft.'}
+                        ? 'No issues found by these five checks.'
+                        : 'Review the findings and suggested fixes below.'}
                     </p>
                   </div>
                 </div>
@@ -317,7 +317,7 @@ export function App() {
                 <div className="empty-icon" aria-hidden="true">
                   ✓
                 </div>
-                <h3>A fresh pair of checks.</h3>
+                <h3>No report yet.</h3>
                 <p>
                   Run a review to spot missing metadata, heading issues, image
                   alt attributes, and placeholder links.
@@ -393,10 +393,9 @@ export function App() {
         </section>
         <footer>
           <span>
-            Content QA Desk <span aria-hidden="true">/</span> A small tool for
-            thoughtful publishing.
+            Content QA Desk <span aria-hidden="true">/</span> Article HTML checks
           </span>
-          <span>Deterministic checks. Human decisions.</span>
+          <span>Reports saved locally</span>
         </footer>
       </main>
     </>
