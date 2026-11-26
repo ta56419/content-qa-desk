@@ -1,7 +1,7 @@
 :root {
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  color: #253c35;
-  background: #f3f6f4;
+  font-family: 'Inter Variable', Inter, system-ui, sans-serif;
+  color: #f1f1ef;
+  background: #101010;
   font-synthesis: none;
   font-size: 16px;
   line-height: 1.5;
@@ -27,23 +27,23 @@ button:disabled {
 button,
 input,
 textarea {
-  border-radius: 7px;
+  border-radius: 12px;
 }
 button:focus-visible,
 a:focus-visible {
-  outline: 3px solid #c28c32;
+  outline: 3px solid #91a7c7;
   outline-offset: 4px;
 }
 input:focus,
 textarea:focus {
-  outline: 2px solid #568575;
+  outline: 2px solid #91a7c7;
   outline-offset: 2px;
 }
 button {
   transition: background 0.15s;
 }
 button:hover:not(:disabled) {
-  background: #eaf0ec;
+  background: #252a32;
 }
 h1,
 h2,
@@ -54,11 +54,11 @@ p {
 h1,
 h2,
 h3 {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Inter Variable', Inter, system-ui, sans-serif;
 }
 h2 {
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 650;
 }
 h3 {
   font-size: 1rem;
@@ -66,8 +66,8 @@ h3 {
 }
 .topbar {
   height: 76px;
-  background: #fff;
-  border-bottom: 1px solid #dce5df;
+  background: #171717;
+  border-bottom: 1px solid #ffffff0d;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -86,16 +86,16 @@ h3 {
   place-items: center;
   width: 32px;
   height: 34px;
-  border-radius: 7px;
-  background: #234e40;
-  color: white;
+  border-radius: 12px;
+  background: #deded8;
+  color: #111;
   font-size: 22px;
 }
 .local-label {
   font-size: 0.75rem;
   letter-spacing: 1.4px;
   font-weight: 700;
-  color: #667a70;
+  color: #a5a5a1;
 }
 main {
   max-width: 1416px;
@@ -113,7 +113,7 @@ main {
   font-size: 0.69rem;
   letter-spacing: 1.6px;
   font-weight: 700;
-  color: #697f73;
+  color: #91a7c7;
   margin-bottom: 6px;
 }
 h1 {
@@ -122,19 +122,19 @@ h1 {
   line-height: 1.3;
 }
 .intro > div > p:last-child {
-  color: #62736b;
+  color: #a5a5a1;
   margin-top: 10px;
 }
 .scope-note {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  border-left: 2px solid #b5c6bc;
+  border-left: 2px solid #465a76;
   padding-left: 20px;
   font-size: 0.875rem;
 }
 .scope-note span {
-  color: #66776e;
+  color: #a5a5a1;
 }
 .workspace {
   display: grid;
@@ -143,10 +143,10 @@ h1 {
   align-items: start;
 }
 .panel {
-  background: #fff;
-  border: 1px solid #dbe4de;
-  border-radius: 12px;
-  box-shadow: 0 3px 8px #173e3503;
+  background: #171717;
+  border: 1px solid #ffffff0a;
+  border-radius: 18px;
+  box-shadow: 0 3px 8px #00000018;
   min-width: 0;
 }
 .panel-heading {
@@ -155,7 +155,7 @@ h1 {
   justify-content: space-between;
   gap: 16px;
   padding: 22px 26px;
-  border-bottom: 1px solid #e5ebe7;
+  border-bottom: 1px solid #ffffff0a;
 }
 .panel-heading .eyebrow {
   margin-bottom: 2px;
@@ -163,7 +163,7 @@ h1 {
 .text-button {
   background: transparent;
   border: 0;
-  color: #38674f;
+  color: #b4c6df;
   padding: 9px 8px;
   font-weight: 600;
   font-size: 0.875rem;
@@ -182,23 +182,23 @@ label {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 8px;
 }
 label span {
   font-size: 0.75rem;
   font-weight: 400;
-  color: #738078;
+  color: #a5a5a1;
 }
 input,
 textarea {
   display: block;
   width: 100%;
-  border: 1px solid #ced9d1;
+  border: 1px solid #ffffff1c;
   padding: 11px 12px;
-  background: #fff;
-  color: #253c35;
+  background: #171717;
+  color: #f1f1ef;
   margin-bottom: 20px;
 }
 input {
@@ -206,7 +206,7 @@ input {
 }
 input::placeholder,
 textarea::placeholder {
-  color: #78867e;
+  color: #92928f;
 }
 .meta-input {
   height: 76px;
@@ -214,20 +214,20 @@ textarea::placeholder {
   resize: vertical;
 }
 .code-input {
-  height: 328px;
+  height: 240px;
   min-height: 180px;
   resize: vertical;
-  background: #f6f8f6;
+  background: #141414;
   font-family: Consolas, 'Courier New', monospace;
   font-size: 0.8125rem;
   line-height: 1.65;
   tab-size: 2;
   margin-bottom: 9px;
-  color: #365b48;
+  color: #c2ccdc;
 }
 .helper {
   font-size: 0.75rem;
-  color: #6b7b72;
+  color: #a5a5a1;
 }
 .editor-actions {
   display: flex;
@@ -241,27 +241,27 @@ textarea::placeholder {
   gap: 28px;
   justify-content: space-between;
   align-items: center;
-  background: #244f40;
-  border: 1px solid #244f40;
-  color: #fff;
+  background: #deded8;
+  border: 1px solid transparent;
+  color: #111;
   font-weight: 600;
   padding: 11px 19px;
   font-size: 0.9375rem;
 }
 .primary:hover:not(:disabled) {
-  background: #173c2e;
+  background: #f1f1ef;
 }
 .save-note {
   font-size: 0.6875rem;
-  color: #77877d;
+  color: #a5a5a1;
   margin-left: auto;
 }
 .results {
-  min-height: 718px;
+  min-height: 0;
 }
 .saved-tag {
-  color: #416a52;
-  background: #eef4ef;
+  color: #c2ccdc;
+  background: #232b36;
   font-size: 0.75rem;
   border-radius: 20px;
   padding: 5px 10px;
@@ -272,28 +272,28 @@ textarea::placeholder {
   gap: 16px;
   margin: 24px 26px 18px;
   padding: 19px;
-  background: #fbf6e9;
-  border: 1px solid #eee0b9;
-  border-radius: 9px;
+  background: #25231e;
+  border: 1px solid #ffffff08;
+  border-radius: 14px;
 }
 .result-summary.clear {
-  background: #eff6ef;
-  border-color: #c9ddc8;
+  background: #202921;
+  border-color: #ffffff08;
 }
 .result-number {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: 'Inter Variable', Inter, system-ui, sans-serif;
   font-size: 2.5rem;
   line-height: 1.2;
   font-weight: 700;
-  color: #8a641c;
+  color: #d7bd82;
   min-width: 39px;
 }
 .clear .result-number {
-  color: #386747;
+  color: #b1c9b0;
 }
 .result-summary p {
   font-size: 0.8125rem;
-  color: #746d57;
+  color: #bcb5a6;
   margin-top: 3px;
 }
 .rule-status {
@@ -309,14 +309,14 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   gap: 5px;
-  border: 1px solid #dce8df;
-  border-radius: 5px;
+  border: 1px solid #ffffff0a;
+  border-radius: 8px;
   padding: 5px 8px;
-  color: #487151;
+  color: #b1c9b0;
 }
 .rule-status li.needs-review {
-  color: #846126;
-  border-color: #eadcbf;
+  color: #d7bd82;
+  border-color: #ffffff0a;
 }
 .rule-status li > span:first-child {
   font-weight: 700;
@@ -330,7 +330,7 @@ textarea::placeholder {
   display: flex;
   gap: 12px;
   padding: 19px 0;
-  border-top: 1px solid #e5ebe6;
+  border-top: 1px solid #ffffff0d;
 }
 .finding-index {
   flex-shrink: 0;
@@ -338,33 +338,33 @@ textarea::placeholder {
   place-items: center;
   width: 22px;
   height: 22px;
-  background: #f6f1e6;
+  background: #2a2720;
   border-radius: 50%;
   font-size: 0.6875rem;
-  color: #8d6a2a;
+  color: #d7bd82;
   font-weight: 700;
   margin-top: 2px;
 }
 .context {
   font-family: Consolas, monospace;
   font-size: 0.75rem;
-  color: #65766c;
-  background: #f5f7f5;
-  border-radius: 4px;
+  color: #b8c4d7;
+  background: #202329;
+  border-radius: 8px;
   padding: 7px 9px;
   margin: 9px 0;
   overflow-wrap: anywhere;
 }
 .suggestion {
-  font-size: 0.875rem;
-  color: #607267;
+  font-size: 1rem;
+  color: #b9b9b4;
   line-height: 1.6;
 }
 .report-footnote {
-  border-top: 1px solid #e5ebe6;
+  border-top: 1px solid #ffffff0d;
   padding: 16px 26px;
   font-size: 0.6875rem;
-  color: #7a877f;
+  color: #a5a5a1;
 }
 .empty-state {
   padding: 48px 38px;
@@ -376,14 +376,14 @@ textarea::placeholder {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: #eff4ef;
-  color: #527a5e;
+  background: #232b36;
+  color: #b4c6df;
   font-size: 1.6rem;
   margin: 0 auto 20px;
 }
 .empty-state > p {
   font-size: 0.875rem;
-  color: #6a7b70;
+  color: #a5a5a1;
   margin-top: 12px;
 }
 .empty-state ul {
@@ -395,7 +395,7 @@ textarea::placeholder {
   flex-wrap: wrap;
   gap: 12px;
   font-size: 0.8125rem;
-  color: #6a7b70;
+  color: #a5a5a1;
 }
 .error,
 .stale-note {
@@ -405,12 +405,12 @@ textarea::placeholder {
   font-size: 0.875rem;
 }
 .error {
-  color: #9b322b;
-  background: #fff0ec;
+  color: #efb4ac;
+  background: #362322;
 }
 .stale-note {
-  color: #805b18;
-  background: #fff7e3;
+  color: #d7bd82;
+  background: #302a1e;
 }
 .history {
   margin-top: 24px;
@@ -427,7 +427,7 @@ textarea::placeholder {
   overflow-y: auto;
 }
 .history-list li + li {
-  border-top: 1px solid #e9eeea;
+  border-top: 1px solid #ffffff0a;
 }
 .history-list button {
   border: 0;
@@ -441,11 +441,11 @@ textarea::placeholder {
   color: inherit;
 }
 .history-list button[aria-current='true'] {
-  background: #f4f8f4;
+  background: #202329;
 }
 .history-id {
   font-size: 0.75rem;
-  color: #8a978e;
+  color: #a5a5a1;
   min-width: 30px;
 }
 .history-title {
@@ -457,31 +457,31 @@ textarea::placeholder {
 }
 .history-title small {
   display: block;
-  color: #77857c;
+  color: #a5a5a1;
   font-size: 0.75rem;
   font-weight: 400;
   margin-top: 3px;
 }
 .count-badge {
-  background: #faf3e3;
-  color: #886623;
+  background: #2a2720;
+  color: #d7bd82;
   padding: 4px 9px;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 0.75rem;
   white-space: nowrap;
 }
 .count-badge.zero {
-  background: #eef5ee;
-  color: #426d48;
+  background: #202921;
+  color: #b1c9b0;
 }
 .open-label {
   font-size: 0.8125rem;
-  color: #496c55;
+  color: #b4c6df;
   white-space: nowrap;
 }
 .history-empty {
   padding: 26px;
-  color: #78867d;
+  color: #a5a5a1;
   font-size: 0.875rem;
 }
 footer {
@@ -490,11 +490,11 @@ footer {
   gap: 15px;
   padding: 25px 0 30px;
   font-size: 0.6875rem;
-  color: #7a8880;
+  color: #a5a5a1;
 }
 footer span span {
   margin: 0 8px;
-  color: #b5c1b8;
+  color: #666663;
 }
 .sr-only {
   position: absolute;
@@ -511,17 +511,17 @@ footer span span {
   position: absolute;
   top: -100px;
   left: 20px;
-  background: white;
+  background: #171717;
   padding: 10px;
   z-index: 10;
-  color: #244f40;
+  color: #deded8;
 }
 .skip-link:focus {
   top: 10px;
 }
 @media (min-width: 1600px) {
   .code-input {
-    height: 350px;
+    height: 260px;
   }
 }
 @media (max-width: 950px) {
@@ -588,7 +588,7 @@ footer span span {
     text-align: right;
   }
   .code-input {
-    height: 300px;
+    height: 180px;
   }
   .save-note {
     width: auto;
